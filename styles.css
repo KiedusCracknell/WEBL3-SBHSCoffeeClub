@@ -15,6 +15,10 @@ html {
 .logo {
     height: 50%;
 }
-.backgroundimage{
-    
+body{
+    background-image: url(image/background.jpg);
+    grid-column:1/5;
+    grid-row: 1/4;
+    background-size: cover;
+
 }
