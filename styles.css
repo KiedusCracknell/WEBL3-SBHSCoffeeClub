@@ -1,10 +1,6 @@
 html {
     background-color: burlywood;
 }
-
-nav a{
-    background-color: black;
-}
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
@@ -12,10 +8,10 @@ nav a{
     /* 2fr 4fr 1fr */
 }
 .navBar {
+    color: black;
     grid-column: 3/4;
     grid-row: 1/2;
 }
 .logo{
-    width: 50%;
-    height: 50%;
+    size: 50px;
 }
