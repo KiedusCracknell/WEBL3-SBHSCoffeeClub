@@ -1,6 +1,6 @@
 .homebg {
     background-color: burlywood;
-    background-image: url(image/background.png);
+    background-image: url(image/homebackground.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -30,4 +30,6 @@ grid-row: 2/4;
 opacity: 80%;
 border-radius: 25px;
 }
-
+.aboutbg{
+    background-image: url(image/aboutbackground.jpg);
+}
