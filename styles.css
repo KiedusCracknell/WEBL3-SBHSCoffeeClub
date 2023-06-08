@@ -32,4 +32,7 @@ border-radius: 25px;
 }
 .aboutbg{
     background-image: url(image/aboutbackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
