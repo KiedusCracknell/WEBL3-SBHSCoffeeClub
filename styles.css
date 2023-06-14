@@ -9,7 +9,6 @@ html {
     display: grid;
     grid-template-columns: 20vw 57vw 20vw;
     grid-template-rows: 20vh 30vh 40vh 10vh;
-    /* 2fr 4fr 1fr */
 }
 .navBar {
     color: black;
