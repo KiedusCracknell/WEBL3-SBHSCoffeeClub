@@ -1,9 +1,9 @@
-html {
-  background-color: burlywood;
-  background-image: url(image/background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.homebg {
+    background-color: burlywood;
+    background-image: url(image/homebackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .grid-container {
@@ -102,4 +102,13 @@ html {
     display: block;
     text-align: left;
   }
+}
+.aboutbg{
+  background-image: url(image/aboutbackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.aboutpagecontent h1{
+  color: white;
 }
