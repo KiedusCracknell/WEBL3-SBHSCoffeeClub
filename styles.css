@@ -1,14 +1,14 @@
 /*homepage background*/
 .homebg {
     background-color: burlywood;
-    background-image: url(../image/homebackground.png);
+    background-image: url(../Image/homebackground.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 /*about background*/
 .aboutbg{
-  background-image: url(../image/aboutbackground.jpg);
+  background-image: url(../Image/aboutbackground.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
