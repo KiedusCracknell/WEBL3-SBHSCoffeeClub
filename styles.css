@@ -115,3 +115,9 @@
   z-index: -1;
   position: relative;
 }
+iframe {
+  z-index: 1;
+}
+.MrBeast {
+  opacity: 2.5%;
+}
