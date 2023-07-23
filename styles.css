@@ -114,4 +114,12 @@
   color: white;
   z-index: -1;
   position: relative;
+  text-align: center;
+}
+/*content in the aboutpage*/
+.aboutpagecontent h2{
+  color: white;
+  z-index: -1;
+  position: relative;
+  text-align: center;
 }
