@@ -38,46 +38,68 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.6);
   grid-column: 2/5;
   grid-row: 2/4;
-  opacity: 60%;
   min-height: 30%;
   min-width: 30%;
   border-radius: 25px;
   padding: 3%;
 }
-
-/* contentbox text */
-.contentBox h1{
+/* image on the left index */
+.contentBox h1, .contentBox h2 {
   color: white;
-  opacity: 100%;
+  justify-self: center;
   text-align: center;
-  grid-column: 1/4;
 }
-
-.contentBox h2{
-  color: white;
-  opacity: 100%;
-  text-align: center;
-  grid-column: 2/4;
-}
-
-.contentBox img{
-  opacity: 100%;
+ .contentBox img {
   height: 25vw;
 }
 
-.orderButt {
-
-  color: white;
-  opacity: 100%;
+#mainImg1 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+#mainImg2 {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  justify-self: right;
+}
+.hometitle {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+.hometext {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+#orderButton {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+}
+.orderButton {
+  background-color: #ece5d1;
+  color: black;
+  padding: 5px;
   text-decoration: none;
+  display: flex;
+}
+
+#coffeeMan{
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+@media screen and (max-width: 1000px) {
+  #coffeeMan {
+    visibility: hidden;
+  }
+  
 }
 
 .contentBox nav{
   background-color: black;
-  opacity: 100%;
   grid-column: 2/3;
   grid-row: 3/4;
   text-align: center;
