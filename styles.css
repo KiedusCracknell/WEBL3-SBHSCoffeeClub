@@ -1,6 +1,5 @@
 /*homepage background*/
 .homebg {
-    background-color: burlywood;
     background-image: url(image/homebackground.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -114,4 +113,20 @@
   color: white;
   z-index: -1;
   position: relative;
+}
+.menubg{
+  background-image: url(image/menubg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.menu-container{
+  display:grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 5vw 65vw;
+}
+.menu-container h1 {
+  color: white;
+  text-align: center;
+  grid-column: 1/4;
 }
