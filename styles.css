@@ -122,11 +122,26 @@
 }
 .menu-container{
   display:grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
-  grid-template-rows: 5vw 65vw;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 5vw 5vw auto;
 }
 .menu-container h1 {
   color: white;
   text-align: center;
   grid-column: 1/4;
+}
+.menu-container h2 {
+  color: white;
+  text-align: center;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.coffeeitems {
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  list-style-type: none;
 }
