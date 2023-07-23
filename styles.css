@@ -122,4 +122,13 @@
   z-index: -1;
   position: relative;
   text-align: center;
+  font-size: 2.5vw;
+}
+.aboutImg {
+  width: 60vw;
+  height: 30vh;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
