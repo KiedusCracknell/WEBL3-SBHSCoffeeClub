@@ -1,12 +1,13 @@
 /*homepage background*/
 .homebg {
-    background-image: url(image/homebackground.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url(image/homebackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 /*about background*/
-.aboutbg{
+.aboutbg {
   background-image: url(image/aboutbackground.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -20,6 +21,7 @@
   grid-template-rows: 20vh 30vh 40vh 10vh;
   /* 2fr 4fr 1fr */
 }
+
 /*the logo on all pages*/
 .logo {
   grid-column: 1/3;
@@ -29,12 +31,12 @@
   min-height: 30%;
   min-width: 50%;
 }
+
 /*the main content box*/
 .contentBox {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.6);
   grid-column: 2/5;
   grid-row: 2/4;
-  opacity: 60%;
   min-height: 30%;
   min-width: 30%;
   border-radius: 25px;
@@ -108,35 +110,44 @@
     text-align: left;
   }
 }
+
 /*content in the aboutpage*/
-.aboutpagecontent h1{
+.aboutpagecontent h1 {
   color: white;
   z-index: -1;
   position: relative;
 }
-.menubg{
+
+.menubg {
   background-image: url(image/menubg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.menu-container{
-  display:grid;
+
+.menu-container {
+  display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 5vw 5vw auto;
 }
+
 .menu-container h1 {
+  text-decoration: underline;
   color: white;
   text-align: center;
   grid-column: 1/4;
 }
-.menu-container h2 {
+
+.menutitle1 h2 {
+  text-decoration: underline;
   color: white;
   text-align: center;
   grid-column: 1/2;
   grid-row: 2/3;
 }
+
 .coffeeitems {
+  font-size: 20px;
   padding: 0;
   margin: 0;
   color: white;
@@ -144,4 +155,23 @@
   grid-column: 1/2;
   grid-row: 3/4;
   list-style-type: none;
+}
+
+.otheritems {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  list-style-type: none;
+}
+
+.menutitle2 h2 {
+  text-decoration: underline;
+  color: white;
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
