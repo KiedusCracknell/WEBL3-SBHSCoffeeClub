@@ -18,8 +18,8 @@
 /*main grid*/
 .grid-container {
   display: grid;
-  grid-template-columns: 10vw 10vw 57vw 10vw 10vw;
-  grid-template-rows: 20vh 30vh 40vh 10vh;
+  grid-template-columns: 1fr 1fr 6fr 1fr 1fr;
+  grid-template-rows: 2fr 3fr 4fr 1fr;
   /* 2fr 4fr 1fr */
 }
 
@@ -133,6 +133,7 @@ h2.aboutpagecontent1 {
   text-align: center;
   grid-column: 1/4;
   grid-row: 3/4;
+  text-justify: center;
 }
 
 /*content in the aboutpage*/
@@ -157,4 +158,15 @@ h2.aboutpagecontent2 {
 .aboutImg img {
   width: 100%;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .aboutImg {
+    display: none;
+  }
+
+  .contentBox .aboutpagecontent2 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
 }
