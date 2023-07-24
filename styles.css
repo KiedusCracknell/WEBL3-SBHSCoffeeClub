@@ -8,8 +8,9 @@
 }
 
 
+
 /*about background*/
-.aboutbg{
+.aboutbg {
   background-image: url(../Image/aboutbackground.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,6 +25,19 @@
   /* 2fr 4fr 1fr */
 }
 
+textarea#review {
+  height: 80%;
+  width: 100%;
+  text-overflow: inherit;
+  resize: none;
+}
+
+img.reviewGif {
+  grid-column: 2/4;
+  grid-row: 1/4;
+  justify-self: center;
+  align-self: center;
+}
 
 /*the logo on all pages*/
 .logo {
@@ -36,19 +50,95 @@
 }
 
 
+
 /*the main content box*/
 .contentBox {
-  background-color: rgba(0, 0, 0, 0.6);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  background-color: rgba(0, 0, 0, 0.6);
   grid-column: 2/5;
   grid-row: 2/4;
   min-height: 30%;
   min-width: 30%;
   border-radius: 25px;
-  z-index: -1;
   padding: 3%;
+}
+
+/* image on the left index */
+.contentBox h1,
+.contentBox h2 {
+  color: white;
+  justify-self: center;
+  text-align: center;
+}
+
+.contentBox img {
+  height: 25vw;
+}
+
+#mainImg1 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+#mainImg2 {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  justify-self: right;
+}
+
+.hometitle {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+.hometext {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+#orderButton {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: block;
+  height: 3em;
+  width: 50%;
+  justify-self: center;
+  align-self: center;
+  border-radius: 5px;
+  background-color: #ece5d1;
+  font-size: 1vw;
+  margin-bottom: 5em;
+}
+
+.orderButton {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  line-height: 3em;
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+#coffeeMan {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+@media screen and (max-width: 1000px) {
+  #coffeeMan {
+    visibility: hidden;
+  }
+
+}
+
+.contentBox nav {
+  background-color: black;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  text-align: center;
 }
 
 /* Add a black background color to the top navigation */
@@ -143,7 +233,6 @@ h2.aboutpagecontent1 {
 /*content in the aboutpage*/
 h2.aboutpagecontent2 {
   color: white;
-  z-index: -1;
   position: relative;
   text-align: center;
   grid-column: 1/4;
@@ -289,4 +378,48 @@ h2.aboutpagecontent2 {
   text-align: center;
   grid-column: 2/3;
   grid-row: 2/3;
+}
+
+iframe {
+  z-index: 1;
+}
+
+.MrBeast {
+  opacity: 2.5%;
+}
+
+.OrderForm {
+  grid-column: 2/5;
+  grid-row: 2/4;
+  min-height: 30%;
+  min-width: 30%;
+  border-radius: 25px;
+}
+
+.reviewForm {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+iframe {
+  z-index: 1;
+}
+
+.MrBeast {
+  opacity: 2.5%;
+}
+
+.OrderForm {
+  grid-column: 2/5;
+  grid-row: 2/4;
+  min-height: 30%;
+  min-width: 30%;
+  border-radius: 25px;
+}
+
+.reviewForm {
+  position: relative;
+  z-index: 2;
+  color: white;
 }
