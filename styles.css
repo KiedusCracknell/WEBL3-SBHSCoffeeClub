@@ -1,11 +1,11 @@
 /*homepage background*/
 .homebg {
-    background-color: burlywood;
-    background-image: url(../Image/homebackground.png);
-    /* https://www.freepik.com/free-photo/top-view-cup-coffee-with-roasted-beans_5898344.htm#query=coffee%20cup%20top%20view&position=14&from_view=keyword&track=robertav1_2_sidr%22>Freepik</a>  */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-color: burlywood;
+  background-image: url(../Image/homebackground.png);
+  /* https://www.freepik.com/free-photo/top-view-cup-coffee-with-roasted-beans_5898344.htm#query=coffee%20cup%20top%20view&position=14&from_view=keyword&track=robertav1_2_sidr%22>Freepik</a>  */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
@@ -79,27 +79,32 @@ img.reviewGif {
   height: 25vw;
 }
 
+/* places home page coffee picture in the correct spot*/
 #mainImg1 {
   grid-row: 2/3;
   grid-column: 1/2;
 }
 
+/* places home page coffee picture in the correct spot*/
 #mainImg2 {
   grid-row: 2/3;
   grid-column: 3/4;
   justify-self: right;
 }
 
+/* home page title location */
 .hometitle {
   grid-row: 1/2;
   grid-column: 2/3;
 }
 
+/* home text location */
 .hometext {
   grid-row: 2/3;
   grid-column: 2/3;
 }
 
+/* order button location and styling */
 #orderButton {
   grid-row: 3/4;
   grid-column: 2/3;
@@ -115,6 +120,7 @@ img.reviewGif {
   margin-bottom: 5em;
 }
 
+/* more order button sytling */
 .orderButton {
   color: black;
   text-decoration: none;
@@ -123,19 +129,23 @@ img.reviewGif {
   width: 100%;
   padding-bottom: 2em;
 }
+
+/* makes the order button more responsive */
 @media screen and (max-width: 600px) {
-#orderButton{
-  height: 3em;
-  width:100%;
-  font-size: 4vw;
-}
+  #orderButton {
+    height: 3em;
+    width: 100%;
+    font-size: 4vw;
+  }
 }
 
+/* coffe cup gif location */
 #coffeeMan {
   grid-row: 2/3;
   grid-column: 2/3;
 }
 
+/* makes the coffee cup more responsive */
 @media screen and (max-width: 1000px) {
   #coffeeMan {
     visibility: hidden;
@@ -247,6 +257,7 @@ h2.aboutpagecontent2 {
   padding: 5px;
 }
 
+/* about page coffee picture */
 .aboutImg {
   width: 100%;
   height: 100%;
@@ -255,16 +266,19 @@ h2.aboutpagecontent2 {
 
 }
 
+/* changeing the size of about page coffee picture */
 .aboutImg img {
   width: 100%;
   border-radius: 10px;
 }
 
+/* makes about page more responsive */
 @media screen and (max-width: 600px) {
   .aboutImg {
     display: none;
   }
 
+  /* .aboutpagecontent2 location */
   .contentBox .aboutpagecontent2 {
     grid-row: 2/3;
     grid-column: 1/4;
@@ -273,6 +287,7 @@ h2.aboutpagecontent2 {
   }
 }
 
+/* menu page back ground img */
 .menubg {
   background-image: url(image/menubg.jpg);
   /* <a href="https://www.freepik.com/free-photo/coffee-beans-white-wooden-background-closeup_9046141.htm#query=coffee%20background&position=31&from_view=keyword&track=ais">Image by pvproductions</a> on Freepik  */
@@ -281,6 +296,7 @@ h2.aboutpagecontent2 {
   background-position: center;
 }
 
+/* menu page grid */
 .menu-container {
   grid-column: 1/4;
   grid-row: 1/4;
@@ -289,12 +305,15 @@ h2.aboutpagecontent2 {
   grid-template-rows: 5vw 5vw;
 }
 
+/* menu page h1 */
 .menu-container h1 {
   text-decoration: underline;
   color: white;
   text-align: center;
   grid-column: 1/4;
 }
+
+/* menu page h2 */
 .menutitle1 h2 {
   text-decoration: underline;
   color: white;
@@ -303,6 +322,7 @@ h2.aboutpagecontent2 {
   grid-row: 2/3;
 }
 
+/* menu page h2 */
 .menutitle2 h2 {
   text-decoration: underline;
   color: white;
@@ -311,6 +331,7 @@ h2.aboutpagecontent2 {
   grid-row: 2/3;
 }
 
+/* li for hot drinks */
 .coffeeitems {
   font-size: 20px;
   padding: 0;
@@ -322,6 +343,7 @@ h2.aboutpagecontent2 {
   list-style-type: none;
 }
 
+/* li for milk and syrup */
 .otheritems {
   font-size: 20px;
   padding: 0;
@@ -332,17 +354,23 @@ h2.aboutpagecontent2 {
   grid-row: 3/4;
   list-style-type: none;
 }
+
+/* makes the menu page more responsive */
 @media screen and (max-width: 600px) {
-  .menubg{
+  .menubg {
     height: 170vh;
   }
-  .menucontentBox{
+
+  .menucontentBox {
     height: 180%;
   }
-  .menu-container{
+
+  .menu-container {
     grid-template-rows: auto;
   }
 }
+
+/* menu page content box */
 .menucontentBox {
   background-color: rgba(0, 0, 0, 0.6);
   display: grid;
@@ -357,14 +385,17 @@ h2.aboutpagecontent2 {
   padding: 3%;
 }
 
+/* places order form above everything */
 iframe {
   z-index: 1;
 }
 
+/* mr beast */
 .MrBeast {
   opacity: 2.5%;
 }
 
+/* places order form in the corect place */
 .OrderForm {
   grid-column: 2/5;
   grid-row: 2/4;
@@ -373,41 +404,41 @@ iframe {
   border-radius: 25px;
 }
 
+/* places the review form above everything and colours the text */
 .reviewForm {
   position: relative;
   z-index: 2;
   color: white;
 }
 
-iframe {
-  z-index: 1;
-}
-
-.MrBeast {
-  opacity: 2.5%;
-}
-
-.OrderForm {
-  grid-column: 2/5;
-  grid-row: 2/4;
-  min-height: 30%;
-  min-width: 30%;
-  border-radius: 25px;
-}
-
-.reviewForm {
-  position: relative;
-  z-index: 2;
-  color: white;
-}
+/* orderpage grid */
 .ordergrid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 6fr 1fr 1fr;
   grid-template-rows: 2fr 3fr 4fr 1fr;
   /* 2fr 4fr 1fr */
 }
+
+/* makes the order page grid more responsive */
 @media screen and (max-width: 600px) {
- .ordergrid-container{
-  grid-template-rows: 2fr 11fr 11fr 1fr;
+  .ordergrid-container {
+    grid-template-rows: 2fr 11fr 11fr 1fr;
   }
+}
+
+/* orderpage background img */
+.orderbg {
+  background-image: url(Image/orderbg.jpg);
+  /* <a href="https://www.freepik.com/free-photo/mixed-coffee-cups-with-leaf-white-wooden-textured-wallpaper_11447612.htm#page=2&query=coffee%20background&position=49&from_view=search&track=ais">Image by rawpixel.com</a> on Freepik  */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+/* makes the order page background img more responsive */
+@media screen and (max-width: 600px) {
+  .orderbg {
+    height: 100vh;
   }
+}
