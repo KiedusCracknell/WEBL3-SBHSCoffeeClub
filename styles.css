@@ -31,8 +31,10 @@ textarea#review {
 }
 
 img.reviewGif {
-  grid-column: auto;
-  grid-row: auto;
+  grid-column: 2/4;
+  grid-row: 1/4;
+  justify-self: center;
+  align-self: center;
 }
 
 /*the logo on all pages*/
@@ -58,13 +60,16 @@ img.reviewGif {
   border-radius: 25px;
   padding: 3%;
 }
+
 /* image on the left index */
-.contentBox h1, .contentBox h2 {
+.contentBox h1,
+.contentBox h2 {
   color: white;
   justify-self: center;
   text-align: center;
 }
- .contentBox img {
+
+.contentBox img {
   height: 25vw;
 }
 
@@ -72,19 +77,23 @@ img.reviewGif {
   grid-row: 2/3;
   grid-column: 1/2;
 }
+
 #mainImg2 {
   grid-row: 2/3;
   grid-column: 3/4;
   justify-self: right;
 }
+
 .hometitle {
   grid-row: 1/2;
   grid-column: 2/3;
 }
+
 .hometext {
   grid-row: 2/3;
   grid-column: 2/3;
 }
+
 #orderButton {
   grid-row: 3/4;
   grid-column: 2/3;
@@ -99,6 +108,7 @@ img.reviewGif {
   font-size: 1vw;
   margin-bottom: 5em;
 }
+
 .orderButton {
   color: black;
   text-decoration: none;
@@ -108,18 +118,19 @@ img.reviewGif {
   padding-bottom: 2em;
 }
 
-#coffeeMan{
+#coffeeMan {
   grid-row: 2/3;
   grid-column: 2/3;
 }
+
 @media screen and (max-width: 1000px) {
   #coffeeMan {
     visibility: hidden;
   }
-  
+
 }
 
-.contentBox nav{
+.contentBox nav {
   background-color: black;
   grid-column: 2/3;
   grid-row: 3/4;
