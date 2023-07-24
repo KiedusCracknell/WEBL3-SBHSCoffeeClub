@@ -23,10 +23,16 @@
   /* 2fr 4fr 1fr */
 }
 
-#review {
-  height: 100%;
+textarea#review {
+  height: 80%;
   width: 100%;
   text-overflow: inherit;
+  resize: none;
+}
+
+img.reviewGif {
+  grid-column: auto;
+  grid-row: auto;
 }
 
 /*the logo on all pages*/
@@ -83,14 +89,23 @@
   grid-row: 3/4;
   grid-column: 2/3;
   display: flex;
-  justify-content: center;
+  justify-content: block;
+  height: 3em;
+  width: 50%;
+  justify-self: center;
+  align-self: center;
+  border-radius: 5px;
+  background-color: #ece5d1;
+  font-size: 1vw;
+  margin-bottom: 5em;
 }
 .orderButton {
-  background-color: #ece5d1;
   color: black;
-  padding: 5px;
   text-decoration: none;
-  display: flex;
+  text-align: center;
+  line-height: 3em;
+  width: 100%;
+  padding-bottom: 2em;
 }
 
 #coffeeMan{
