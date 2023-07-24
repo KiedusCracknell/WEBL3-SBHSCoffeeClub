@@ -23,6 +23,12 @@
   /* 2fr 4fr 1fr */
 }
 
+#review {
+  height: 100%;
+  width: 100%;
+  text-overflow: inherit;
+}
+
 /*the logo on all pages*/
 .logo {
   grid-column: 1/3;
