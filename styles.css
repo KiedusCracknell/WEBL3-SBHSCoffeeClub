@@ -7,6 +7,7 @@
     background-position: center;
 }
 
+
 /*about background*/
 .aboutbg{
   background-image: url(../Image/aboutbackground.jpg);
@@ -18,10 +19,11 @@
 /*main grid*/
 .grid-container {
   display: grid;
-  grid-template-columns: 10vw 10vw 57vw 10vw 10vw;
-  grid-template-rows: 20vh 30vh 40vh 10vh;
+  grid-template-columns: 1fr 1fr 6fr 1fr 1fr;
+  grid-template-rows: 2fr 3fr 4fr 1fr;
   /* 2fr 4fr 1fr */
 }
+
 
 /*the logo on all pages*/
 .logo {
@@ -33,16 +35,20 @@
   min-width: 50%;
 }
 
+
 /*the main content box*/
 .contentBox {
   background-color: rgba(0, 0, 0, 0.6);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-column: 2/5;
   grid-row: 2/4;
   min-height: 30%;
   min-width: 30%;
   border-radius: 25px;
   z-index: -1;
-  position: relative;
+  padding: 3%;
 }
 
 /* Add a black background color to the top navigation */
@@ -113,10 +119,118 @@
 }
 
 /*content in the aboutpage*/
-.aboutpagecontent h1 {
+h1.aboutpagecontent {
   color: white;
   z-index: -1;
   position: relative;
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+/*content in the aboutpage*/
+h2.aboutpagecontent1 {
+  color: white;
+  z-index: -1;
+  position: relative;
+  text-align: center;
+  grid-column: 1/4;
+  grid-row: 3/4;
+  text-justify: center;
+}
+
+
+/*content in the aboutpage*/
+h2.aboutpagecontent2 {
+  color: white;
+  z-index: -1;
+  position: relative;
+  text-align: center;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  text-justify: center;
+}
+
+.aboutImg {
+  width: 100%;
+  height: 100%;
+  grid-row: 2/3;
+  grid-column: 2/3;
+
+}
+
+.aboutImg img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .aboutImg {
+    display: none;
+  }
+
+  .contentBox .aboutpagecontent2 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+}
+
+.menubg {
+  background-image: url(image/menubg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 5vw 5vw auto;
+}
+
+.menu-container h1 {
+  text-decoration: underline;
+  color: white;
+  text-align: center;
+  grid-column: 1/4;
+}
+
+.menutitle1 h2 {
+  text-decoration: underline;
+  color: white;
+  text-align: center;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.coffeeitems {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  list-style-type: none;
+}
+
+.otheritems {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  list-style-type: none;
+}
+
+.menutitle2 h2 {
+  text-decoration: underline;
+  color: white;
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 .menubg {
