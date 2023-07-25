@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- loads hamburger icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</head>
+
+<body class="orderbg">
+    <div class="ordergrid-container">
+        <img class="logo" src="Image/coffeeClubLogo.png">
+        <div class="navBar">
+            <nav>
+                <div class="topnav" id="myTopnav">
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="order.html" class="active">Order</a>
+                    <a href="about.html">About</a>
+                    <a href="review.html">Review</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <iframe class="OrderForm" width="100%" height="100%"
+            src="https://forms.office.com/Pages/ResponsePage.aspx?id=H27XEOlGn0e6CgRsztO88J7KzuU1JdRApeOI8E8ZAZJUNDlDNjlHMlJRWVEySTM0QUdLQUdaUUFGRi4u&embed=true"
+            style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen
+            mozallowfullscreen msallowfullscreen>
+        </iframe>
+        <!-- <div class="contentBox">
+        </div> -->
+    </div>
+</body>

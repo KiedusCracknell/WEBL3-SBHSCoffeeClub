@@ -1,7 +1,445 @@
-html {
-    background-color: burlywood;
+/*homepage background*/
+.homebg {
+  background-color: burlywood;
+  background-image: url(../Image/homebackground.png);
+  /* https://www.freepik.com/free-photo/top-view-cup-coffee-with-roasted-beans_5898344.htm#query=coffee%20cup%20top%20view&position=14&from_view=keyword&track=robertav1_2_sidr%22>Freepik</a>  */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.nav a{
-    background-color: black;
+
+
+/*about background*/
+.aboutbg {
+  background-image: url(../Image/aboutbackground.jpg);
+  /* <a href="https://www.freepik.com/free-photo/fresh-roasted-coffee-beans-cup-burlap_10470884.htm#query=coffee%20bean%20background&position=17&from_view=keyword&track=ais">Image by ededchechine</a> on Freepik  */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+/*main grid*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 6fr 1fr 1fr;
+  grid-template-rows: 2fr 3fr 4fr 1fr;
+  /* 2fr 4fr 1fr */
+}
+
+textarea#review {
+  height: 80%;
+  width: 100%;
+  text-overflow: inherit;
+  resize: none;
+}
+
+img.reviewGif {
+  grid-column: 2/4;
+  grid-row: 1/4;
+  justify-self: center;
+  align-self: center;
+}
+
+/*the logo on all pages*/
+.logo {
+  grid-column: 1/3;
+  width: 90%;
+  max-height: 100%;
+  max-width: 40%;
+  min-height: 30%;
+  min-width: 50%;
+}
+
+
+
+/*the main content box*/
+.contentBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: rgba(0, 0, 0, 0.6);
+  grid-column: 2/5;
+  grid-row: 2/4;
+  min-height: 30%;
+  min-width: 30%;
+  border-radius: 25px;
+  padding: 3%;
+}
+
+/* image on the left index */
+.contentBox h1,
+.contentBox h2 {
+  color: white;
+  justify-self: center;
+  text-align: center;
+}
+
+.contentBox img {
+  height: 25vw;
+}
+
+/* places home page coffee picture in the correct spot*/
+#mainImg1 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+/* places home page coffee picture in the correct spot*/
+#mainImg2 {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  justify-self: right;
+}
+
+/* home page title location */
+.hometitle {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+/* home text location */
+.hometext {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+/* order button location and styling */
+#orderButton {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: block;
+  height: 3em;
+  width: 50%;
+  justify-self: center;
+  align-self: center;
+  border-radius: 5px;
+  background-color: #ece5d1;
+  font-size: 1vw;
+  margin-bottom: 5em;
+}
+
+/* more order button sytling */
+.orderButton {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  line-height: 3em;
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+/* makes the order button more responsive */
+@media screen and (max-width: 600px) {
+  #orderButton {
+    height: 3em;
+    width: 100%;
+    font-size: 4vw;
+  }
+}
+
+/* coffe cup gif location */
+#coffeeMan {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+/* makes the coffee cup more responsive */
+@media screen and (max-width: 1000px) {
+  #coffeeMan {
+    visibility: hidden;
+  }
+
+}
+
+.contentBox nav {
+  background-color: black;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  text-align: center;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  grid-column: 3/4;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #413328;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/*content in the aboutpage*/
+h1.aboutpagecontent {
+  color: white;
+  position: relative;
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+/*content in the aboutpage*/
+h2.aboutpagecontent1 {
+  color: white;
+  position: relative;
+  text-align: center;
+  grid-column: 1/4;
+  grid-row: 3/4;
+  text-justify: center;
+}
+
+
+/*content in the aboutpage*/
+h2.aboutpagecontent2 {
+  color: white;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  margin: auto;
+  width: 60%;
+  padding: 5px;
+}
+
+/* about page coffee picture */
+.aboutImg {
+  width: 100%;
+  height: 100%;
+  grid-row: 2/3;
+  grid-column: 2/3;
+
+}
+
+/* changeing the size of about page coffee picture */
+.aboutImg img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* makes about page more responsive */
+@media screen and (max-width: 600px) {
+  .aboutImg {
+    display: none;
+  }
+
+  /* .aboutpagecontent2 location */
+  .contentBox .aboutpagecontent2 {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* menu page back ground img */
+.menubg {
+  background-image: url(image/menubg.jpg);
+  /* <a href="https://www.freepik.com/free-photo/coffee-beans-white-wooden-background-closeup_9046141.htm#query=coffee%20background&position=31&from_view=keyword&track=ais">Image by pvproductions</a> on Freepik  */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* menu page grid */
+.menu-container {
+  grid-column: 1/4;
+  grid-row: 1/4;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 5vw 5vw;
+}
+
+/* menu page h1 */
+.menu-container h1 {
+  text-decoration: underline;
+  color: white;
+  text-align: center;
+  grid-column: 1/4;
+}
+
+/* menu page h2 */
+.menutitle1 h2 {
+  text-decoration: underline;
+  color: white;
+  text-align: center;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+/* menu page h2 */
+.menutitle2 h2 {
+  text-decoration: underline;
+  color: white;
+  text-align: center;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+/* li for hot drinks */
+.coffeeitems {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  list-style-type: none;
+}
+
+/* li for milk and syrup */
+.otheritems {
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  list-style-type: none;
+}
+
+/* makes the menu page more responsive */
+@media screen and (max-width: 600px) {
+  .menubg {
+    height: 170vh;
+  }
+
+  .menucontentBox {
+    height: 180%;
+  }
+
+  .menu-container {
+    grid-template-rows: auto;
+  }
+}
+
+/* menu page content box */
+.menucontentBox {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column: 2/5;
+  grid-row: 2/4;
+  min-height: 30%;
+  min-width: 30%;
+  border-radius: 25px;
+  z-index: -1;
+  padding: 3%;
+}
+
+/* places order form above everything */
+iframe {
+  z-index: 1;
+}
+
+/* mr beast */
+.MrBeast {
+  opacity: 2.5%;
+}
+
+/* places order form in the corect place */
+.OrderForm {
+  grid-column: 2/5;
+  grid-row: 2/4;
+  min-height: 30%;
+  min-width: 30%;
+  border-radius: 25px;
+}
+
+/* places the review form above everything and colours the text */
+.reviewForm {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+/* orderpage grid */
+.ordergrid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 6fr 1fr 1fr;
+  grid-template-rows: 2fr 3fr 4fr 1fr;
+  /* 2fr 4fr 1fr */
+}
+
+/* makes the order page grid more responsive */
+@media screen and (max-width: 600px) {
+  .ordergrid-container {
+    grid-template-rows: 2fr 11fr 11fr 1fr;
+  }
+}
+
+/* orderpage background img */
+.orderbg {
+  background-image: url(Image/orderbg.jpg);
+  /* <a href="https://www.freepik.com/free-photo/mixed-coffee-cups-with-leaf-white-wooden-textured-wallpaper_11447612.htm#page=2&query=coffee%20background&position=49&from_view=search&track=ais">Image by rawpixel.com</a> on Freepik  */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+/* makes the order page background img more responsive */
+@media screen and (max-width: 600px) {
+  .orderbg {
+    height: 100vh;
+  }
 }

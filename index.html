@@ -1,13 +1,54 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <!-- loads hamburger icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </head>
-<body>
-    <div class="nav">
-        <a href="index.html">Home</a>
-        <a href="index.html">About</a>
-        <a href="index.html">Menu</a>
-        <a href="index.html">Order</a>
+
+<body class="homebg">
+    <div class="grid-container">
+        <img class="logo" src="Image/coffeeClubLogo.png">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="order.html">Order</a>
+                <a href="about.html">About</a>
+                <a href="review.html">Review</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+        <div class="contentBox">
+            <h1 class="hometitle">SBHS Coffee Club</h1>
+            <img src="../Image/coffee2.jpg" alt="coffee top down" id="mainImg2">
+            <img src="../Image/coffee1.jpg" alt="coffee top down" id="mainImg1">
+            <h2 class="hometext">Buy a coffee card from the office before ordering.
+                $16 for 4 drinks!</h2>
+            <img src="../Image/coffeeCup.gif" id="coffeeMan" alt="animated coffee cup">
+            <div id="orderButton">
+                <a class="orderButton" href="order.html">
+                    Order Now!
+                </a>
+            </div>
+        </div>
     </div>
 </body>
-<footer></footer>
